@@ -1,0 +1,114 @@
+.tt-header {
+  background-color: #202121;
+  height: 60px;
+  padding: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99999999;
+}
+
+.tt-header a {
+  text-decoration: none;
+}
+
+.tt-header-logo {
+  float: left;
+}
+
+.tt-header-logo img {
+  width: auto;
+  height: 35px;
+}
+
+.tt-header-buttons {
+  float: right;
+}
+
+.tt-button {
+  display: inline-block;
+  padding: 0.4em 0.8em;
+  font-family: sans-serif;
+  background-color: #369;
+  border-radius: 5px;
+  color: white;
+  line-height: 1;
+}
+
+.tt-button-orange {
+  background-color: #ff6600;
+}
+
+.full-first {
+  pointer-events: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  font-size: 3vw;
+  color: #ddd;
+  font-family: "arial";
+  line-height: 1.6;
+  opacity: 0;
+}
+
+.full-first.show {
+  opacity: 1;
+}
+
+.full-second,
+.full {
+  pointer-events: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  opacity: 0;
+}
+
+.full-second.show,
+.full.show {
+  opacity: 1;
+  display: block;
+}
+
+.full-second p,
+.full p {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #ddd;
+  font-family: "arial";
+  font-size: 5vw;
+  white-space: nowrap;
+  letter-spacing: 0.09em;
+}
+
+.full p span {
+  opacity: 0.4;
+  margin: 0 0.1em;
+}
+
+.full-second p strong,
+.full p strong {
+  color: #ff6600;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

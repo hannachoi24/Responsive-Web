@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Me</title>
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    />
+
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="full-second">
+      <p><strong>join</strong>@hnc24@naver.com</p>
+    </div>
+    <div class="full-first">
+      <div class="center">
+        <ul class="summary">
+          <li>Negative Margins</li>
+          <li>em</li>
+          <li>::before, ::after</li>
+          <li>animation</li>
+          <li>Transform, Translate</li>
+          <li>vw, vh</li>
+          <li>box-shadow</li>
+          <li>box-sizing</li>
+          <li>Media Queries</li>
+        </ul>
+      </div>
+    </div>
+    <div class="full">
+      <p>t.veam.me<span>/</span><strong>aboutme</strong></p>
+    </div>
+
+    <div class="tt-header">
+      <a class="tt-header-logo" href="https://www.w3schools.com/"
+        ><img src="./w3.png"
+      /></a>
+    
+    </div>
+
+    <div class="portrait"></div>
+
+    <div class="portfolio">
+      <div class="portfolio-title">
+        I'm a
+        <div class="job">
+          <ul class="job-list">
+            <li>AppDeveloper</li>
+            <li>Designer</li>
+            <li>AndroidDeveloper</li>
+            <li>Creator</li>
+            <li>WebDeveloper</li>
+          </ul>
+        </div>
+        <h1>Han Na</h1>
+        <p>
+          Myname is Hanna Choi. I go to Soongsil University now and I am in the third grade. 
+          I want to be an app developer. 
+          So I'm working hard for my future. Personally, I am studying programming languages and doing projects. My merit is tenacity. 
+          I always work hard patiently in any work. As I always worked hard, I got used to it. 
+          My motto is that everything will come true if I work hard. 
+          I don’t think there’s anything that won’t come true if you work hard. 
+          But my merit can be my weakness, which is that I can't give up when I have to. I think this is one of the tasks I have to solve in the future.
+          My interest is javascript and Android. My hobby is watching movies and café tours.
+          There is a detailed explanation below. 
+    
+        </p>
+        <div style="font-size: 30px">
+          <a href=https://github.com/hannachoi24><i class="fab fa-github"></i></a>
+          <a href="https://ko-kr.facebook.com/"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="section-title">Featured Work</h2>
+        <div class="time">
+          <div class="time-item">
+            <h2>JavaScript</h2>
+            <a href = JavaScript.html><img src="JavaScript.jpg" width="100%" height="100%"></a>
+          </div>
+          <div class="time-item">
+            <h2>Watching movies</h2>
+           <a href = watchingmovies.html><img src ="netflix.jpg" width="110%" height="110%" ></a>
+          </div>
+          <div class="time-item">
+            <h2>AndroidDevelop</h2>
+            <a href = Android.html><img src="Android.jpg" width="110%" height="110%"></a>
+          </div>
+          <div class="time-item">
+            <h2>Cafe Tour</h2>
+
+            <a href = cafetour.html><img src="./cafe.jpg" width="110%" height="110%"></a>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills">
+          <div class="skills-item" data-score="90">Photoshop</div>
+          <div class="skills-item" data-score="80">HTML+CSS</div>
+          <div class="skills-item" data-score="70">JavaScript</div>
+          <div class="skills-item" data-score="60">C++</div>
+          <div class="skills-item" data-score="60">Python</div>
+          <div class="skills-item" data-score="50">Java</div>
+          <div class="skills-item" data-score="50">Design</div>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="section-title">Contacts</h2>
+        <dl>
+          <dt>Cell.</dt>
+          <dd>+82)51234771</dd>
+          <dt>Email.</dt>
+          <dd>hnc24@naver.com</dd>
+          <dt>Web.</dt>
+          <dd>www.github.com</dd>
+        </dl>
+      </div>
+    </div>
+
+    <footer class = "siteFooter">
+        &copy; <span id="year"></span> by HTML
+    </footer>
+
+    <script>
+      document.getElementById("year").innerHTML;
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    
+
+    <script>
+      $(window).keydown(function (event) {
+        var key = event.keyCode;
+        if (key == 85) {
+          $(".full").toggleClass("show", 400);
+        }
+        if (key == 73) {
+          $(".full-first").toggleClass("show", 400);
+        }
+        if (key == 69) {
+          $(".full-second").toggleClass("show", 400);
+        }
+        if (key == 65) {
+          $(".full-second.full-wow").toggleClass("show", 400);
+        }
+      });
+      
+    </script>
+  </body>
+</html>
